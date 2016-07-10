@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lezhian.academiccircle.activity.EmailAuthenticationActivity">
+
+    <include layout="@layout/common_top_title"/>
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.lezhian.academiccircle.widget.EditText.XEditText
+        android:inputType="text"
+        android:hint="@string/please_input_owner_trusts"
+        android:id="@+id/et_trusts_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+         <com.lezhian.academiccircle.widget.EditText.XEditText
+             android:inputType="text"
+        android:hint="@string/please_inout_name"
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+         <com.lezhian.academiccircle.widget.EditText.XEditText
+             android:inputType="text"
+        android:hint="@string/please_input_trusts_email"
+        android:id="@+id/et_email_trusts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:text="@string/get_email_activated_link"
+        android:id="@+id/btn_email_activated_link"
+        android:gravity="center"
+        android:background="@drawable/btn_selector"
+        android:enabled="false"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">学术圈</string>
+
+    <!-- 学术头条 -->
+    <string name="headline_readcount">浏览</string>
+
+    <!-- 自定义ListView-->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!--底部的三个按钮-->
+    <string name="mine">我的</string>
+    <string name="academicCircle">学术圈</string>
+    <string name="headline">头条</string>
+
+    <!--选择身份界面和选择学术圈界面-->
+    <string name="select_main_identity">选择主要身份</string>
+    <string name="recommend_right_content">为你推送更合适的内容</string>
+
+
+    <string name="select_your_academicCircle">选择你的学术圈</string>
+    <string name="not_one">可多选，不止一项</string>
+    <string name="next">下一步</string>
+    <string name="identify">身份</string>
+    <string name="academicHeadLine">学术头条</string>
+    <string name="personSave">个人收藏</string>
+    <string name="recommend">推荐</string>
+    <string name="academicDetail">学术详情</string>
+    <string name="publish">发布</string>
+    <string name="personPage">个人主页</string>
+    <string name="paperList">论文列表</string>
+    <string name="paperDetail">论文详情</string>
+    <string name="modifyMessage">修改信息</string>
+    <string name="modify">修改</string>
+    <string name="achievementsModify">成果修改</string>
+    <string name="achievements">成果</string>
+    <string name="introduction">简介</string>
+    <string name="personIntroduction">个人简介</string>
+    <string name="newAchievements">新增成果</string>
+    <string name="academicConcern">学术关注</string>
+    <string name="concern">关注:</string>
+    <string name="concernButton">关注</string>
+    <string name="search">搜索</string>
+    <string name="academicCharacterLook">学术人物浏览</string>
+    <string name="characterLook">任务浏览</string>
+    <string name="message">消息</string>
+    <string name="messageVerification">短信验证</string>
+    <string name="notLogin">未登录</string>
+    <string name="subscribeTopic">订阅热点</string>
+    <string name="headLineSave">头条收藏</string>
+    <string name="myPage">个人主页</string>
+    <string name="academicSave">学术收藏</string>
+    <string name="headImage">头像</string>
+    <string name="name">姓名</string>
+    <string name="identity">身份</string>
+    <string name="area">地区</string>
+    <string name="areaSelect">选择地区</string>
+    <string name="Email">邮箱</string>
+    <string name="phoneNumber">手机号码</string>
+    <string name="phoneNum">手机号</string>
+    <string name="password">密码</string>
+    <string name="selectArea">选择地区</string>
+    <string name="currentArea">当前位置</string>
+    <string name="currentVersion">当前版本V1.0</string>
+    <string name="modifyPhoneNumber">修改手机号</string>
+    <string name="bindNewPhoneNumber">绑定新手机号</string>
+    <string name="getVerificationCode">获得验证码</string>
+    <string name="bind">绑定</string>
+    <string name="modifyPassword">修改密码</string>
+    <string name="setNewPassword">设置新密码</string>
+    <string name="commit">提交</string>
+    <string name="setting">设置</string>
+    <string name="newPushRemind">新推送提醒</string>
+    <string name="clearCache">清除缓存</string>
+    <string name="checkUpdate">检查更新</string>
+    <string name="login">登录</string>
+    <string name="goLogin">去登录</string>
+    <string name="register">注册</string>
+    <string name="account">账号</string>
+    <string name="pleaseInputPhoneNumberOrEmail">请输入手机号或邮箱</string>
+    <string name="pleaseInputPassword">请输入密码</string>
+    <string name="pleaseInputMessageVerificationCode">请输入短信验证码</string>
+
+    <string name="forgetPassword">忘记密码?</string>
+    <string name="findPassword">找回密码</string>
+    <string name="PhoneNumber">手机号</string>
+    <string name="verificationCode">验证码</string>
+    <string name="settingPassword">设置密码</string>
+    <string name="settingNewPassword">设置新密码</string>
+    <string name="agreeProtocol">我已阅读并同意 </string>
+    <string name="EmailAuthenticate">邮箱认证</string>A
+    <string name="pleaseInputYourAgency">请输入所在的机构名称，例如，南京大学</string>
+    <string name="pleaseInputName">请输入姓名</string>
+    <string name="agencyEmailAddress">机构邮箱地址</string>
+    <string name="getEmailLink">获取邮箱激活链接</string>
+    <string name="verificationNotification">验证码已发送到您的手机上，如果没有收到，可在60秒后重新获取。</string>
+    <string name="doNotForgetNewPassword">别再忘记您的新密码。</string>
+    <string name="resetPassword">重置密码</string>
+    <string name="accountManage">帐号管理</string>
+    <string name="allArea">全部地区</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="beConcerned">被关注:</string>
+    <string name="commentCircles">讨论圈</string>
+    <string name="answer">回复</string>
+    <string name="publishTitle">标题，鲜亮的标题会吸引更多人看~</string>
+    <string name="publishContent">内容，阐述一下您的想法或学术摘要~</string>
+    <string name="addHobbyTag">添加兴趣标签</string>
+    <string name="send">发送</string>
+    <string name="HIndex">H指数:</string>
+    <string name="replyToMe">回复我的</string>
+    <string name="myComments">我的评论</string>
+    <string name="jobsModify">职位修改</string>
+    <string name="jobsModifyPersonIntroduction">职位修改(个人简介)</string>
+    <string name="ok">确定</string>
+    <string name="addNewAchievements">新增成果</string>
+    <string name="paper">论文</string>
+    <string name="pleaseSelectAchievements">请选择成果类型</string>
+    <string name="pleaseInputTitle">请输入标题</string>
+    <string name="pleasePublishYear">请输入出版年</string>
+    <string name="pleaseInputAuthor">请输入作者</string>
+    <string name="pleaseAchievementLink">请输入成果链接</string>
+    <string name="emailAddress">邮箱地址:</string>
+
+
+    <string name="str_turn_back">取消</string>
+    <string name="str_forward">前进</string>
+
+    <string name="title_following">我关注的(%1$d)</string>
+    <string name="title_followers">关注我的(%1$d)</string>
+    <string name="cancel">取消</string>
+    <string name="et_hint">人物、学科领域</string>
+
+
+    <string name="please_input_owner_trusts">请输入所在的机构名称</string>
+    <string name="please_inout_name">请输入姓名</string>
+    <string name="please_input_trusts_email">机构邮箱的地址</string>
+    <string name="get_email_activated_link">获取邮箱激活链接</string>
+    <string name="email_trusts">邮箱认证</string>
+
+
+</resources>

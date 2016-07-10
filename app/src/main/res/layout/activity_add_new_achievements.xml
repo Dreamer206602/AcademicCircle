@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lezhian.academiccircle.activity.AddNewAchievementsActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <include layout="@layout/common_top_title"/>
+
+
+    <!-- 选择成果的类型-->
+   <RelativeLayout
+       android:layout_margin="20dp"
+       android:background="@color/white"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <com.rengwuxian.materialedittext.MaterialEditText
+           android:id="@+id/et_type"
+           android:hint="@string/pleaseSelectAchievements"
+           android:gravity="center"
+           app:met_baseColor="@color/purple"
+           android:layout_margin="5dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+
+       <ImageView
+           android:scaleType="centerCrop"
+           android:src="@mipmap/line_vetical"
+           android:layout_width="1dp"
+           android:layout_height="20dp"
+           android:layout_marginRight="41dp"
+           android:layout_marginEnd="41dp"
+           android:id="@+id/imageView4"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"/>
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/sanjiao"
+           android:scaleType="centerCrop"
+           android:id="@+id/iv_expand"
+           android:layout_marginRight="18dp"
+           android:layout_marginEnd="18dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"/>
+
+
+   </RelativeLayout>
+
+
+    <!-- 输入标题-->
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <com.rengwuxian.materialedittext.MaterialEditText
+           android:id="@+id/et_title"
+           android:hint="@string/pleaseInputTitle"
+           app:met_baseColor="@color/purple"
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+
+    <!-- 输入出版年-->
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <com.rengwuxian.materialedittext.MaterialEditText
+           android:id="@+id/et_publish_year"
+           android:hint="@string/pleasePublishYear"
+           app:met_baseColor="@color/purple"
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+    <!-- 输入作者-->
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <com.rengwuxian.materialedittext.MaterialEditText
+           android:id="@+id/et_author"
+           android:hint="@string/pleaseInputAuthor"
+           app:met_baseColor="@color/purple"
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+    <!-- 输入成果连接-->
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <com.rengwuxian.materialedittext.MaterialEditText
+           android:id="@+id/et_achievement_link"
+           android:hint="@string/pleaseAchievementLink"
+           app:met_baseColor="@color/purple"
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:background="@color/purple"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="100dp">
+
+    <TextView
+        android:text="选择你的学术圈"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_next"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:id="@+id/tv_select"/>
+    <TextView
+        android:text="下一步"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_next"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"/>
+    <TextView
+        android:text="可多选，不止一项"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_not_more"
+        android:textSize="15sp"
+        android:layout_below="@+id/tv_select"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

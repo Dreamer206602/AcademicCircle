@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+             tools:context="com.lezhian.academiccircle.fragment.AcademicCircleFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/tablayout"
+            android:fillViewport="false"
+            tl:layout_scrollFlags="scroll"
+            tl:tabIndicatorColor="@color/purple"
+            tl:tabIndicatorHeight="2.0dp"
+            tl:tabSelectedTextColor="@color/purple"
+            tl:tabTextColor="#ced0d3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"/>
+        <!--<com.flyco.tablayout.SlidingTabLayout-->
+           <!--android:layout_marginLeft="15dp"-->
+           <!--android:layout_marginTop="10dp"-->
+           <!--android:layout_marginBottom="2dp"-->
+            <!--android:id="@+id/tablayout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="48dp"-->
+           <!--tl:tl_textSelectColor="@color/purple"-->
+           <!--tl:tl_textUnselectColor="#66000000"-->
+           <!--tl:tl_indicator_color="@color/purple"-->
+           <!--tl:tl_tab_padding="0dp"-->
+           <!--tl:tl_tab_width="95dp"-->
+            <!--tl:tl_textsize="22sp"/>-->
+
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:src="@mipmap/com_search"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/iv_email"
+        android:layout_toStartOf="@+id/iv_email"/>
+ <ImageView
+        android:id="@+id/iv_email"
+        android:background="@mipmap/ic_account_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="42dp"
+        android:layout_marginEnd="42dp"
+       android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

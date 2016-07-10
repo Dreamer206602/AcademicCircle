@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lezhian.academiccircle.activity.MyPageActivity">
+
+
+    <include layout="@layout/common_top_title"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_Main"
+                android:background="@color/person_bg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+      <RelativeLayout
+          android:id="@+id/relativeLayout_left"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="100dp">
+
+
+          <TextView
+              android:text="@string/concern"
+              android:id="@+id/tv_concern"
+              android:layout_margin="15dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="12"
+              android:id="@+id/tv_concern_count"
+              android:layout_alignTop="@+id/tv_concern"
+              android:layout_centerHorizontal="true"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/beConcerned"
+              android:id="@+id/tv_be_concerned"
+              android:layout_marginTop="5dp"
+              android:layout_below="@+id/tv_concern_count"
+              android:layout_alignLeft="@+id/tv_concern"
+              android:layout_alignStart="@+id/tv_concern"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="123"
+              android:id="@+id/tv_be_concerned_count"
+              android:layout_alignTop="@+id/tv_be_concerned"
+              android:layout_toRightOf="@+id/tv_be_concerned"
+              android:layout_toEndOf="@+id/tv_be_concerned"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/HIndex"
+              android:id="@+id/tv_h_index"
+              android:layout_marginTop="5dp"
+              android:layout_below="@+id/tv_be_concerned"
+              android:layout_alignLeft="@+id/tv_be_concerned"
+              android:layout_alignStart="@+id/tv_be_concerned"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="8"
+              android:id="@+id/tv_h_index_count"
+              android:layout_alignTop="@+id/tv_h_index"
+              android:layout_toRightOf="@+id/tv_be_concerned"
+              android:layout_toEndOf="@+id/tv_be_concerned"/>
+
+
+          <!-- 中间的类型-->
+      </RelativeLayout>
+            <RelativeLayout
+          android:id="@+id/relativeLayout_middle"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="250dp">
+
+         <com.lezhian.academiccircle.widget.RoundImageView
+             android:layout_marginTop="10dp"
+             android:layout_centerHorizontal="true"
+             android:id="@+id/iv_headImage"
+             android:src="@mipmap/app_icon"
+             android:layout_width="100dp"
+             android:layout_height="100dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王大伟"
+                    android:id="@+id/tv_name"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/iv_headImage"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学者"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_identity"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="-6dp"
+                    android:layout_alignBottom="@+id/tv_name"
+                    android:layout_toRightOf="@+id/iv_headImage"
+                    android:layout_toEndOf="@+id/iv_headImage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="宁波大学图书馆副馆长"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:id="@+id/tv_college_identity"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_alignRight="@+id/tv_identity"
+                    android:layout_alignEnd="@+id/tv_identity"
+                    android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="宁波大学网络中心主任"
+                    android:singleLine="true"
+                    android:layout_marginTop="29dp"
+                    android:textSize="12sp"
+                    android:id="@+id/tv_college_identity2"
+                    android:layout_below="@+id/tv_college_identity"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+
+            </RelativeLayout>
+
+
+            <!-- 按钮部分-->
+            <RelativeLayout
+          android:id="@+id/relativeLayout_right"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="100dp">
+                <TextView
+                    android:id="@+id/tv_concern_button"
+                    android:background="@drawable/bg_rectangle"
+                    android:text="@string/concernButton"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:text="@string/modifyMessage"
+                    android:id="@+id/tv_modify_message"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10sp"
+                    android:background="@drawable/bg_rectangle2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/tv_concern_button"
+                    android:layout_alignStart="@+id/tv_concern_button"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/toolbar_tab"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            android:fillViewport="false"
+            app:layout_scrollFlags="scroll"
+            app:tabIndicatorColor="@color/purple"
+            app:tabIndicatorHeight="2.0dp"
+            app:tabSelectedTextColor="@color/purple"
+            app:tabTextColor="#ced0d3"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+</LinearLayout>

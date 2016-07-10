@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iha_iv_icon"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/app_icon"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/iha_tv_title"
+            android:layout_toRightOf="@id/iha_iv_icon"
+            android:layout_alignTop="@id/iha_iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:text="回答文档我的货物IE很到位U盾毫无诶和定位"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/iha_iv_icon"
+            android:layout_alignBottom="@id/iha_iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/iha_tv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="果壳网"/>
+
+            <TextView
+                android:id="@+id/iha_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_eye"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:text="12345万"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

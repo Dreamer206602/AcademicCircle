@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lezhian.academiccircle.activity.SelectAcademicCircleActivity">
+
+    <include
+        layout="@layout/activity_top_title"/>
+
+    <ListView
+        android:id="@+id/asac_lv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:divider="@color/bg_theme"
+        android:dividerHeight="0dp">
+    </ListView>
+</LinearLayout>

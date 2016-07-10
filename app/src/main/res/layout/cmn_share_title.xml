@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bg_title">
+
+    <LinearLayout
+        android:id="@+id/cst_ll_back"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_back"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cst_ll_right"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/cst_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_share"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cst_ll_right2"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/cst_ll_right"
+        android:visibility="gone"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/cst_iv_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_collect"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/cst_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="标题"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

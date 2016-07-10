@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lezhian.academiccircle.activity.RegisterActivity">
+
+    <include
+        layout="@layout/common_top_title"/>
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_margin="8dp"
+                android:src="@mipmap/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.lezhian.academiccircle.widget.EditText.XEditText
+                android:inputType="phone"
+                android:id="@+id/et_phoneNumber"
+                android:hint="@string/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:background="@drawable/bg_rectangle"
+                android:text="@string/getVerificationCode"
+                android:id="@+id/tv_getVerificationCode"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+        <include layout="@layout/common_bottom_view"/>
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_verification"
+                android:layout_margin="8dp"
+                android:src="@mipmap/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--style="@style/style_editText"-->
+            <com.lezhian.academiccircle.widget.EditText.XEditText
+                android:inputType="phone"
+                android:id="@+id/et_verification"
+                android:hint="@string/pleaseInputMessageVerificationCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/iv_verification"
+                android:layout_toEndOf="@+id/iv_verification"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"/>
+        </RelativeLayout>
+        <include layout="@layout/common_bottom_view"/>
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_password"
+                android:layout_margin="8dp"
+                android:src="@mipmap/lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.lezhian.academiccircle.widget.EditText.XEditText
+                android:inputType="textPassword"
+                android:id="@+id/et_password"
+                android:hint="@string/settingPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="29dp"
+                android:layout_marginStart="29dp"
+                android:layout_centerInParent="true"
+                android:layout_alignTop="@+id/iv_password"
+                android:layout_toRightOf="@+id/iv_password"
+                android:layout_toEndOf="@+id/iv_password"/>
+        </RelativeLayout>
+
+
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:text="@string/next"
+            android:id="@+id/btn_register"
+            android:gravity="center"
+            android:background="@drawable/btn_selector"
+            android:enabled="false"
+            android:layout_width="332dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cb_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_select"
+                android:text="@string/agreeProtocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cb_select"
+                android:layout_toEndOf="@+id/cb_select"/>
+
+            <TextView
+                android:id="@+id/tv_protocol"
+                android:text="学术头条用户协议"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_select"
+                android:layout_toEndOf="@+id/tv_select"/>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lezhian.academiccircle.activity.MessageVerifyActivity">
+
+    <include
+        layout="@layout/common_top_title"
+        />
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_margin="30dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <ImageView
+         android:src="@mipmap/message"
+         android:id="@+id/imageView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/et_verification"
+            style="@style/style_editText"
+            android:hint="@string/pleaseInputMessageVerificationCode"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:background="@drawable/bg_rectangle"
+            android:text="@string/getVerificationCode"
+            android:id="@+id/tv_getVerificationCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/verificationNotification"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:text="@string/next"
+        android:id="@+id/btn_register"
+        android:gravity="center"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

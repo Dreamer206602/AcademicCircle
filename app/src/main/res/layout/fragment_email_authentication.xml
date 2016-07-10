@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lezhian.academiccircle.activity.EmailAuthenticationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_middle"
+            android:text="@string/email_trusts"
+            android:textSize="22sp"
+            android:textColor="@color/purple"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view"
+            android:layout_centerHorizontal="true"/>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:id="@+id/view"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.lezhian.academiccircle.widget.EditText.XEditText
+            android:hint="@string/please_input_owner_trusts"
+            android:id="@+id/et_trusts_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.lezhian.academiccircle.widget.EditText.XEditText
+            android:hint="@string/please_inout_name"
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.lezhian.academiccircle.widget.EditText.XEditText
+            android:hint="@string/please_input_trusts_email"
+            android:id="@+id/et_email_trusts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="20dp"
+        android:text="@string/get_email_activated_link"
+        android:id="@+id/btn_email_activated_link"
+        android:gravity="center"
+        android:background="@drawable/btn_selector"
+        android:enabled="false"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+</LinearLayout>

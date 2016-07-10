@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lezhian.academiccircle.activity.AccountManageActivity">
+
+    <include layout="@layout/common_top_title"/>
+
+    <!-- 头像-->
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.lezhian.academiccircle.widget.RoundImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_headImage"
+            android:src="@mipmap/app_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_centerVertical="true"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王大伟"
+            android:textSize="20sp"
+            android:id="@+id/tv_user_name"
+            android:layout_alignTop="@+id/iv_headImage"
+            android:layout_toRightOf="@+id/iv_headImage"
+            android:layout_toEndOf="@+id/iv_headImage"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailAddress"
+            android:id="@+id/tv_email_address"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_alignLeft="@+id/tv_user_name"
+            android:layout_alignStart="@+id/tv_user_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx@nju.edu"
+            android:singleLine="true"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tv_real_email_address"
+            android:layout_alignTop="@+id/tv_email_address"
+            android:layout_toRightOf="@+id/tv_email_address"
+            android:layout_toEndOf="@+id/tv_email_address"/>
+    </RelativeLayout>
+
+
+
+
+     <!-- 身份-->
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:src="@mipmap/identity"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/iv_identity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/identity"
+            android:id="@+id/tv_identity"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_identity"
+            android:layout_toEndOf="@+id/iv_identity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教师"
+            android:textSize="16sp"
+            android:drawableRight="@mipmap/right"
+            android:drawablePadding="10dp"
+            android:id="@+id/tv_real_identity"
+            android:layout_marginRight="34dp"
+            android:layout_marginEnd="34dp"
+            android:layout_alignTop="@+id/tv_identity"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+    </RelativeLayout>
+
+
+    <!-- 地区-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:src="@mipmap/area"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/iv_area"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/area"
+            android:id="@+id/tv_area"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_area"
+            android:layout_toEndOf="@+id/iv_area"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="江苏南京"
+            android:textSize="16sp"
+            android:drawableRight="@mipmap/right"
+            android:drawablePadding="10dp"
+            android:id="@+id/tv_real_area"
+            android:layout_marginRight="34dp"
+            android:layout_marginEnd="34dp"
+            android:layout_alignTop="@+id/tv_area"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+    </RelativeLayout>
+
+     <!-- 手机号-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:src="@mipmap/phone"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/iv_phone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phoneNum"
+            android:id="@+id/tv_phone"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_phone"
+            android:layout_toEndOf="@+id/iv_phone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="187****1234"
+            android:textSize="16sp"
+            android:drawableRight="@mipmap/right"
+            android:drawablePadding="10dp"
+            android:id="@+id/tv_real_phone"
+            android:layout_marginRight="34dp"
+            android:layout_marginEnd="34dp"
+            android:layout_alignTop="@+id/tv_phone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+    </RelativeLayout>
+
+     <!-- 密码-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:src="@mipmap/password"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/iv_password"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:id="@+id/tv_password"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_password"
+            android:layout_toEndOf="@+id/iv_password"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*******"
+            android:textSize="16sp"
+            android:drawableRight="@mipmap/right"
+            android:drawablePadding="10dp"
+            android:id="@+id/tv_real_password"
+            android:layout_marginRight="34dp"
+            android:layout_marginEnd="34dp"
+            android:layout_alignTop="@+id/tv_password"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+
+        </LinearLayout>
+

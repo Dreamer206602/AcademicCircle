@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lezhian.academiccircle.activity.SettingActivity">
+
+    <include layout="@layout/common_top_title"/>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- 新推送提醒-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+                <TextView
+                    android:layout_margin="20dp"
+                    android:id="@+id/tv_new_push"
+                    android:text="@string/newPushRemind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <com.lezhian.academiccircle.widget.ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginEnd="39dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+                <include layout="@layout/common_bottom_view"/>
+            </RelativeLayout>
+            <!-- 清除缓存-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <TextView
+                    android:layout_margin="20dp"
+                    android:id="@+id/tv_clear_cache"
+                    android:text="@string/clearCache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:text="82M"
+                    android:id="@+id/tv_cache_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_alignTop="@+id/tv_clear_cache"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+                <include layout="@layout/common_bottom_view"/>
+            </RelativeLayout>
+            <!-- 检查更新-->
+<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp">
+
+                <TextView
+                    android:layout_margin="20dp"
+                    android:id="@+id/tv_check_update"
+                    android:text="@string/checkUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:text="@string/currentVersion"
+                    android:id="@+id/tv_current_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="43dp"
+                    android:layout_marginEnd="43dp"
+                    android:layout_alignTop="@+id/tv_check_update"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+                <include layout="@layout/common_bottom_view"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
